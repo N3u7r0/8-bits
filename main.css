@@ -1,0 +1,226 @@
+/*mod de toda la pag */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Press Start 2P', cursive;
+    color: #b8860b;
+}
+a{
+    text-decoration: none;
+    color: #b8860b;
+}
+body{
+    background-image: url("./imagenes/bit_art_fondo.gif");
+    background-size: 400%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+#body__unico{
+    background-image: url("./imagenes/bit_art_background_alternative.gif");
+    background-size: 300%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+.flex__padre{
+    margin-left: 4%;
+    margin-right: 4%;
+    display: flex;
+    flex-direction: column;
+}
+header, main, section, nav, footer {
+margin: 1px;
+border-style: solid;
+border-color:#850085cd;
+background-color: #220622cd;
+display: flex;
+flex-direction: column;
+}
+.alternativo {
+    margin: 1px;
+    border-style: solid;
+    border-color:#d03800cd;
+    background-color: #220f06cd;
+    display: flex;
+    flex-direction: column
+    
+}
+/* navegador y header*/
+#boton__nav__home{
+    background-color: rgb(14, 38, 126);
+}
+#boton__nav__home a{
+    color: whitesmoke;
+
+}
+nav ul{
+    display: flex;
+    justify-content:space-around;
+    list-style-type: none;
+    background-color: #360b3fcd;
+    font-size: 75%;
+}
+.boton__nav{
+    margin: 2px ;
+}
+#ochobits{
+    background-image:url(./imagenes/8bits.jpg) ;
+    background-size:cover;
+    background-position: center center;
+    min-height: 188px;
+}
+/*body*/
+.titulo__center{
+    text-align: center;
+    margin-top: 3px;
+    margin-left: 3px;
+    margin-left: 3px;
+}
+.titulo__center__h1{
+    text-align: center;
+    font-size:larger;
+    margin-top: 3px;
+    margin-left: 3px;
+    margin-left: 3px;
+}
+.games__link {
+    list-style-type: none;
+    justify-content: right;
+    margin-top: 3px;
+    margin-bottom: 7px;
+}
+/* pie de pag */
+.foot__index{
+    text-align:right;
+    font-size:x-small;
+}
+/* pagina gameplays.html*/
+.gameplay__flex{
+    display: flex;
+    flex-direction: column;
+}
+.gameplay__box{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #b8860b;
+    margin: 1px 10px 4px 10px;
+    
+}
+.gameplay__yt{
+    justify-content: center;
+}
+.gameplay__texto{
+    margin-top: 1px;
+    margin-bottom: 4px;
+    text-align: center;
+}
+.texto__truco{
+    color: #b8860bcd;
+    margin: 4px;
+}
+/* pagina Emuladores.html*/ 
+#gens{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #b8860b;
+}
+/* pagina rooms.html*/
+.games__link__rooms {
+    display: flex;
+    flex-direction:column;
+    color:#b8860bcd;
+    justify-items: center;
+       
+}
+.games__link__rooms a{
+    display: flex;
+    justify-content: center;
+    padding-top: 8px;
+    padding-bottom: 2px;
+}
+.games__link__rooms p{
+    text-align: center;
+}
+.games__list{
+    display: flex;
+    flex-direction:column;
+    list-style-type: none;
+}
+
+
+/* breakpoints*/
+@media screen and (min-width: 576px){
+    /* indicador on*/
+    #boton__nav__home{
+        background-color: rgb(14, 126, 20);
+    }
+    body{
+        background-size: 200%;
+    }
+    #body__unico{
+        background-size: 200%;
+
+    }
+    .flex__padre{
+        margin-left: 7%;
+        margin-right: 7%;
+    }
+    #ochobits{
+        background-size: 530px;
+        background-repeat: no-repeat;
+        background-color: black;
+        
+    }
+    .games__list{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media screen and (min-width: 1024px){
+    /* indicador on*/
+    #boton__nav__home{
+        background-color: rgb(126, 27, 14);
+    }
+    body{
+        background-size: cover;
+    }
+    #body__unico{
+        background-size: cover;
+    }
+    .flex__padre{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    #ochobits{
+        background-size: 530px;
+        background-repeat: no-repeat;
+        background-color: black;
+        
+    }
+}   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
