@@ -36,12 +36,34 @@ border-color:#850085cd;
 background-color: #220622cd;
 display: flex;
 flex-direction: column;
-
+animation-name: neon;
+animation-timing-function: ease-in-out;
+animation-duration:3s;
+animation-delay:.7s;
+/*hover */
 transition-property: all;
-transition-duration: .2s;
 transition-timing-function: ease-in-out;
-transition-delay: .1s;
+transition-duration: 1s;
+transition-delay: 3s;
 }
+/*borde de Trucos :D*/
+.alternativo {
+    margin: 1px;
+    border-style: solid;
+    border-color:#b73201cd;
+    background-color: #220f06cd;
+    display: flex;
+    flex-direction: column;
+    animation-name: apagon;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-delay:.7s;
+    /*hover */
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    transition-delay: .3s;
+    }
 /*hovers individuales para q de el efecto por por contenedor! */
 nav:hover{
     background-color: #4d0e4dcd;
@@ -63,15 +85,9 @@ footer:hover{
     background-color: #4d0e4dcd;
     border-color:#0ead00cd;
 }
-
-.alternativo {
-    margin: 1px;
-    border-style: solid;
-    border-color:#d03800cd;
-    background-color: #220f06cd;
-    display: flex;
-    flex-direction: column
-    
+.alternativo:hover{
+    background-color: #975704cd;
+    border-color:#ad0000cd;
 }
 /* navegador y header*/
 #boton__nav__home{
@@ -182,7 +198,7 @@ nav ul{
 
 /* breakpoints*/
 @media screen and (min-width: 576px){
-    /* indicador on*/
+    /* indicador on VERDE tablet*/
     #boton__nav__home{
         background-color: rgb(14, 126, 20);
     }
@@ -211,7 +227,7 @@ nav ul{
 
 
 @media screen and (min-width: 1024px){
-    /* indicador on*/
+    /* indicador on ROJO notebook/desktop*/
     #boton__nav__home{
         background-color: rgb(126, 27, 14);
     }
@@ -231,10 +247,57 @@ nav ul{
         background-color: black;
         
     }
-}   
+}
 
-
-
+/*margin y border efecto rebote y trueno con latido de color, VIOLETA*/
+@keyframes neon {
+    0%{
+        border-color:#850083cd;
+    }
+    15%{
+        border-color:#9c009c;
+    }
+     26%{
+        border-color: rgb(245, 245, 245);
+        margin: 3px;
+    }
+     50%{
+        border-color:#9c009c;
+    }
+     60%{
+        border-color:#850083cd;
+    }
+     80%{
+        border-color:#9c009c;
+    }
+    100%{
+        border-color: #850083cd;
+    }
+}
+@keyframes apagon {
+    0%{
+        border-color:#b73201cd;
+    }
+    15%{
+        border-color:#6f1e00cd;
+    }
+     26%{
+        border-color: rgb(0, 0, 0);
+        margin: 3px;
+    }
+     50%{
+        border-color:#6f1e00cd;
+    }
+     60%{
+        border-color:#b73201cd;
+    }
+     80%{
+        border-color:#6f1e00cd;
+    }
+    100%{
+        border-color: #b73201cd;
+    }
+}
 
 
 
