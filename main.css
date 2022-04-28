@@ -38,7 +38,8 @@ display: flex;
 flex-direction: column;
 animation-name: neon;
 animation-timing-function: ease-in-out;
-animation-duration:3s;
+animation-iteration-count: infinite;
+animation-duration:6s;
 animation-delay:.7s;
 /*hover */
 transition-property: all;
@@ -56,7 +57,7 @@ transition-delay: 3s;
     flex-direction: column;
     animation-name: apagon;
     animation-timing-function: ease-in-out;
-    animation-duration: 3s;
+    animation-duration: 6gits;
     animation-delay:.7s;
     /*hover */
     transition-property: all;
@@ -64,7 +65,7 @@ transition-delay: 3s;
     transition-timing-function: ease-in-out;
     transition-delay: .3s;
     }
-/*hovers individuales para q de el efecto por por contenedor! */
+/*hovers individuales para q de el efecto por contenedor! */
 nav:hover{
     background-color: #4d0e4dcd;
     border-color:#0ead00cd;
@@ -95,7 +96,6 @@ footer:hover{
 }
 #boton__nav__home a{
     color: whitesmoke;
-
 }
 nav ul{
     display: flex;
@@ -249,68 +249,56 @@ nav ul{
     }
 }
 
+
 /*margin y border efecto rebote y trueno con latido de color, VIOLETA*/
 @keyframes neon {
     0%{
         border-color:#850083cd;
     }
-    15%{
+    7%{
         border-color:#9c009c;
     }
-     26%{
+     13%{
         border-color: rgb(245, 245, 245);
         margin: 3px;
     }
-     50%{
+     25%{
         border-color:#9c009c;
     }
-     60%{
+     30%{
         border-color:#850083cd;
+        
     }
-     80%{
+     40%{
         border-color:#9c009c;
     }
-    100%{
+    50%{
         border-color: #850083cd;
+        margin: 1px;
     }
 }
 @keyframes apagon {
     0%{
         border-color:#b73201cd;
     }
-    15%{
+    7%{
         border-color:#6f1e00cd;
     }
-     26%{
+    13%{
         border-color: rgb(0, 0, 0);
         margin: 3px;
     }
-     50%{
+    25%{
         border-color:#6f1e00cd;
     }
-     60%{
+    30%{
         border-color:#b73201cd;
     }
-     80%{
+    40%{
         border-color:#6f1e00cd;
     }
-    100%{
+    50%{
         border-color: #b73201cd;
+        margin: 1px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
